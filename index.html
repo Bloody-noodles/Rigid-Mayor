@@ -17,275 +17,110 @@
 <header>
   <nav>
     <div class="logo">&lt;<span>VICE_MAYOR</span>/&gt;</div>
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <div class="navlinks" id="site-navigation">
-      <a href="#about">about</a>
-      <a href="#work">work</a>
-      <a href="#contact">contact</a>
-    </div>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button>
+    <div class="navlinks" id="site-navigation"><a href="#about">about</a><a href="#work">work</a><a href="#contact">contact</a></div>
     <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">☀</button>
   </nav>
   <div class="nav-overlay" aria-hidden="true"></div>
 </header>
 
 <div class="wrap" id="main-content">
-
-  <section class="hero reveal" style="border-top:none;">
-    <div class="tag">STATUS: OPEN FOR WORK</div>
-    <h1>Oluwafemi Waya<br><span>builds <span id="hero-words" class="accent">AI &amp; web systems</span> that actually run</span>.</h1>
-    <p class="lede">Computer Science graduate (Federal University Oye-Ekiti) working across computer vision, full-stack web development, and — next up — offensive security. No inflated titles, no invented clients. Just what's shipped.</p>
-    <div class="cta-row">
-      <a class="btn" href="#work">See the work →</a>
-      <a class="btn ghost" href="#contact">Get in touch</a>
+<section class="hero reveal" style="border-top:none;">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="tag">STATUS: OPEN FOR WORK</div>
+      <h1>Oluwafemi Waya<br><span>builds <span id="hero-words" class="accent">AI &amp; web systems</span> that actually run</span>.</h1>
+      <p class="lede">Computer Science graduate (Federal University Oye-Ekiti) working across computer vision, full-stack web development, and — next up — offensive security. No inflated titles, no invented clients. Just what's shipped.</p>
+      <div class="cta-row"><a class="btn" href="#work">See the work →</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+      <div class="focus-strip" aria-label="Current focus areas"><span>AI + computer vision</span><span>Full-stack web</span><span>Offensive security</span></div>
     </div>
 
-    <div class="focus-strip" aria-label="Current focus areas">
-      <span>AI + computer vision</span>
-      <span>Full-stack web</span>
-      <span>Offensive security</span>
+    <div class="profile-panel" aria-label="Profile picture">
+      <div class="profile-frame">
+        <img src="wa.me.jpg" alt="Oluwafemi Waya portrait">
+      </div>
+      <div class="profile-badge"><span class="dot"></span> available for selected projects</div>
     </div>
+  </div>
 
-    <div class="log">
-      <div class="log-head"><span class="dot"></span> session_log.txt — verified only</div>
-      <div class="log-body">
-        <div class="log-line"><span class="k">[EDU]</span> B.Sc Computer Science — Federal University Oye-Ekiti</div>
-        <div class="log-line"><span class="k">[BUILT]</span> Real-time object detection &amp; tracking system — YOLOv11n + ByteTrack, <span class="amber">mAP@0.5 0.60</span></div>
-        <div class="log-line"><span class="k">[SHIPPED]</span> Multiple client-facing web builds, deployed on Netlify</div>
-        <div class="log-line"><span class="k">[LEARNING]</span> Penetration testing &amp; ethical hacking — in progress</div>
-        <div class="log-line"><span class="k">[SOURCE]</span> github.com/Bloody-noodles — public, browsable, real commits</div>
-      </div>
+  <div class="log">
+    <div class="log-head"><span class="dot"></span> session_log.txt — verified only</div>
+    <div class="log-body">
+      <div class="log-line"><span class="k">[EDU]</span> B.Sc Computer Science — Federal University Oye-Ekiti</div>
+      <div class="log-line"><span class="k">[BUILT]</span> Real-time object detection &amp; tracking system — YOLOv11n + ByteTrack, <span class="amber">mAP@0.5 0.60</span></div>
+      <div class="log-line"><span class="k">[SHIPPED]</span> VisionSense-AI — deployed real-time computer-vision dashboard with YOLO11n + ByteTrack</div>
+      <div class="log-line"><span class="k">[SHIPPED]</span> Multiple client-facing web builds, deployed on Netlify</div>
+      <div class="log-line"><span class="k">[LEARNING]</span> Penetration testing &amp; ethical hacking — in progress</div>
+      <div class="log-line"><span class="k">[SOURCE]</span> github.com/Bloody-noodles — public, browsable, real commits</div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="about" class="reveal">
-    <div class="eyebrow">01 / ABOUT</div>
-    <div class="about-grid">
-      <div>
-        <p><strong>I'm Oluwafemi</strong> — I go by VICE MAYOR in my work. I'm a Nigerian CS grad who'd rather show you a working repo than tell you a story.</p>
-        <p>My strongest work so far is in <strong>applied computer vision</strong>: my final year project is a real-time surveillance system that detects and tracks people and threat objects (knives, guns) from live video, logs events to a database, and triggers alerts — trained on a custom Roboflow dataset, running YOLOv11n and ByteTrack under a Flask dashboard.</p>
-        <p>Alongside that, I design and ship <strong>full-stack web builds</strong> — landing pages, business sites, and product concepts — usually static-first and deployed on Netlify. I'm currently going deeper into <strong>offensive security and penetration testing</strong>, which is the direction I want my next chapter to move toward.</p>
-      </div>
-      <div class="stack">
-        <h3>Computer Vision / AI</h3>
-        <ul>
-          <li>Python · OpenCV <span class="level">— applied</span></li>
-          <li>YOLOv11n · Ultralytics <span class="level">— applied</span></li>
-          <li>ByteTrack (multi-object tracking) <span class="level">— applied</span></li>
-          <li>Roboflow dataset pipelines <span class="level">— applied</span></li>
-        </ul>
-        <h3>Web Development</h3>
-        <ul>
-          <li>HTML / CSS / JavaScript <span class="level">— applied</span></li>
-          <li>Flask · SQLite <span class="level">— applied</span></li>
-          <li>Modern AI-assisted build tools <span class="level">— applied</span></li>
-        </ul>
-        <h3>Security</h3>
-        <ul>
-          <li>Ethical hacking / pentesting <span class="level">— learning</span></li>
-        </ul>
-      </div>
+<section id="about" class="reveal">
+  <div class="eyebrow">01 / ABOUT</div>
+  <div class="about-grid">
+    <div>
+      <p><strong>I'm Oluwafemi</strong> — I go by VICE MAYOR in my work. I'm a Nigerian CS grad who'd rather show you a working repo than tell you a story.</p>
+      <p>My strongest work so far is in <strong>applied computer vision</strong>: my final year project is a real-time surveillance system that detects and tracks people and threat objects (knives, guns) from live video, logs events to a database, and triggers alerts — trained on a custom Roboflow dataset, running YOLOv11n and ByteTrack under a Flask dashboard.</p>
+      <p>I've also built <strong>VisionSense-AI</strong>, a separate real-time human detection and multi-object tracking system with YOLO11n and ByteTrack. It processes live or demo video, tracks subjects, analyzes movement, records events, and exposes session analytics through a FastAPI backend and Next.js dashboard.</p>
+      <p>Alongside that, I design and ship <strong>full-stack web builds</strong> — landing pages, business sites, and product concepts — usually static-first and deployed on Netlify. I'm currently going deeper into <strong>offensive security and penetration testing</strong>, which is the direction I want my next chapter to move toward.</p>
     </div>
-  </section>
-
-  <section id="work" class="reveal">
-    <div class="eyebrow">02 / SELECTED WORK</div>
-    <h2>What I've actually shipped</h2>
-
-    <div class="work-item">
-      <div class="work-head">
-        <div class="work-title">Real-Time Campus Security System</div>
-        <div class="work-badge flagship">flagship · final year project</div>
-      </div>
-      <div class="work-desc">Live object detection and multi-object tracking for campus surveillance — flags people, knives, guns, and other objects in real time, logs every detection to SQLite, and triggers automatic alerts and screenshot capture through a Flask dashboard.</div>
-      <div class="work-meta">
-        <a href="https://github.com/Bloody-noodles/RealTime_Campus_Security_System" target="_blank" rel="noopener">View source →</a>
-      </div>
+    <div class="stack">
+      <h3>Computer Vision / AI</h3>
+      <ul><li>Python · OpenCV <span class="level">— applied</span></li><li>YOLOv11n · Ultralytics <span class="level">— applied</span></li><li>ByteTrack (multi-object tracking) <span class="level">— applied</span></li><li>Roboflow dataset pipelines <span class="level">— applied</span></li></ul>
+      <h3>Web Development</h3>
+      <ul><li>HTML / CSS / JavaScript <span class="level">— applied</span></li><li>Flask · SQLite <span class="level">— applied</span></li><li>FastAPI · Next.js <span class="level">— applied</span></li><li>Modern AI-assisted build tools <span class="level">— applied</span></li></ul>
+      <h3>Security</h3>
+      <ul><li>Ethical hacking / pentesting <span class="level">— learning</span></li></ul>
     </div>
+  </div>
+</section>
 
-    <div class="work-item">
-      <div class="work-head">
-        <div class="work-title">Auto Dealership Web App</div>
-        <div class="work-badge">web build</div>
-      </div>
-      <div class="work-desc">Vehicle listing and dealership concept site — built and deployed as a full working web app.</div>
-      <div class="work-meta">
-        <a href="https://abegautos.lovable.app/" target="_blank" rel="noopener">Visit site →</a>
-      </div>
-    </div>
+<section id="work" class="reveal">
+  <div class="eyebrow">02 / SELECTED WORK</div>
+  <h2>What I've actually shipped</h2>
 
-    <div class="work-item">
-      <div class="work-head">
-        <div class="work-title">Debola Autos</div>
-        <div class="work-badge">web build</div>
-      </div>
-      <div class="work-desc">Auto sales landing page — static build, deployed on Netlify.</div>
-      <div class="work-meta">
-        <a href="https://debola-autos.netlify.app/" target="_blank" rel="noopener">Visit site →</a>
-      </div>
-    </div>
+  <div class="work-item">
+    <div class="work-head"><div class="work-title">VisionSense-AI</div><div class="work-badge flagship">deployed · computer vision</div></div>
+    <div class="work-desc">Real-time human detection and multi-object tracking system built with YOLO11n and ByteTrack. VisionSense processes live or demo video, tracks subjects, analyzes movement, records events, and exposes session analytics through a FastAPI backend and Next.js dashboard.</div>
+    <div class="work-meta"><a href="https://vision-sense-ai-wine.vercel.app/" target="_blank" rel="noopener">Live demo →</a><a href="https://github.com/Bloody-noodles/VisionSense-AI" target="_blank" rel="noopener">View source →</a></div>
+  </div>
 
-    <div class="work-item">
-      <div class="work-head">
-        <div class="work-title">Aveion Airlines — Services</div>
-        <div class="work-badge">web build</div>
-      </div>
-      <div class="work-desc">Airline services page concept — clean informational layout, deployed on Netlify.</div>
-      <div class="work-meta">
-        <a href="https://aveion-airline.netlify.app/services" target="_blank" rel="noopener">Visit site →</a>
-      </div>
-    </div>
+  <div class="work-item">
+    <div class="work-head"><div class="work-title">Real-Time Campus Security System</div><div class="work-badge">final year project</div></div>
+    <div class="work-desc">Live object detection and multi-object tracking for campus surveillance — flags people, knives, guns, and other objects in real time, logs every detection to SQLite, and triggers automatic alerts and screenshot capture through a Flask dashboard.</div>
+    <div class="work-meta"><a href="https://github.com/Bloody-noodles/RealTime_Campus_Security_System" target="_blank" rel="noopener">View source →</a></div>
+  </div>
 
-    <div class="work-item">
-      <div class="work-head">
-        <div class="work-title">Herb &amp; Tea</div>
-        <div class="work-badge">web build</div>
-      </div>
-      <div class="work-desc">Product-style landing page for a tea/herbal brand concept.</div>
-      <div class="work-meta">
-        <a href="https://herb-tea.netlify.app/" target="_blank" rel="noopener">Visit site →</a>
-      </div>
-    </div>
+  <div class="work-item"><div class="work-head"><div class="work-title">Auto Dealership Web App</div><div class="work-badge">web build</div></div><div class="work-desc">Vehicle listing and dealership concept site — built and deployed as a full working web app.</div><div class="work-meta"><a href="https://abegautos.lovable.app/" target="_blank" rel="noopener">Visit site →</a></div></div>
+  <div class="work-item"><div class="work-head"><div class="work-title">Debola Autos</div><div class="work-badge">web build</div></div><div class="work-desc">Auto sales landing page — static build, deployed on Netlify.</div><div class="work-meta"><a href="https://debola-autos.netlify.app/" target="_blank" rel="noopener">Visit site →</a></div></div>
+  <div class="work-item"><div class="work-head"><div class="work-title">Aveion Airlines — Services</div><div class="work-badge">web build</div></div><div class="work-desc">Airline services page concept — clean informational layout, deployed on Netlify.</div><div class="work-meta"><a href="https://aveion-airline.netlify.app/services" target="_blank" rel="noopener">Visit site →</a></div></div>
+  <div class="work-item"><div class="work-head"><div class="work-title">Herb &amp; Tea</div><div class="work-badge">web build</div></div><div class="work-desc">Product-style landing page for a tea/herbal brand concept.</div><div class="work-meta"><a href="https://herb-tea.netlify.app/" target="_blank" rel="noopener">Visit site →</a></div></div>
+  <div class="work-item"><div class="work-head"><div class="work-title">Naija Flavours</div><div class="work-badge">web build</div></div><div class="work-desc">Food/restaurant-style landing page showcasing Nigerian cuisine branding.</div><div class="work-meta"><a href="https://naija-flavours.netlify.app/" target="_blank" rel="noopener">Visit site →</a></div></div>
+  <div class="work-item"><div class="work-head"><div class="work-title">Trampler</div><div class="work-badge">web build</div></div><div class="work-desc">Additional static web build — deployed on Netlify.</div><div class="work-meta"><a href="https://trampler.netlify.app/#" target="_blank" rel="noopener">Visit site →</a></div></div>
+</section>
 
-    <div class="work-item">
-      <div class="work-head">
-        <div class="work-title">Naija Flavours</div>
-        <div class="work-badge">web build</div>
-      </div>
-      <div class="work-desc">Food/restaurant-style landing page showcasing Nigerian cuisine branding.</div>
-      <div class="work-meta">
-        <a href="https://naija-flavours.netlify.app/" target="_blank" rel="noopener">Visit site →</a>
-      </div>
-    </div>
-
-    <div class="work-item">
-      <div class="work-head">
-        <div class="work-title">Trampler</div>
-        <div class="work-badge">web build</div>
-      </div>
-      <div class="work-desc">Additional static web build — deployed on Netlify.</div>
-      <div class="work-meta">
-        <a href="https://trampler.netlify.app/#" target="_blank" rel="noopener">Visit site →</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="reveal">
-    <div class="eyebrow">03 / CONTACT</div>
-    <div class="contact-box">
-      <div class="big">Let's build something real.</div>
-      <div class="contact-links">
-        <a href="mailto:wayaoluwafemi@gmail.com">wayaoluwafemi@gmail.com</a>
-        <a href="https://github.com/Bloody-noodles" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/oluwafemi-waya-1219a13a2" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-  </section>
-
+<section id="contact" class="reveal">
+  <div class="eyebrow">03 / CONTACT</div>
+  <div class="contact-box"><div class="big">Let's build something real.</div><div class="contact-links"><a href="mailto:wayaoluwafemi@gmail.com">wayaoluwafemi@gmail.com</a><a href="https://github.com/Bloody-noodles" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/oluwafemi-waya-1219a13a2" target="_blank" rel="noopener">LinkedIn</a></div></div>
+</section>
 </div>
 
 <footer>&lt;/VICE_MAYOR&gt; — built honest, 2026</footer>
-
 <script>
-  const heroWords = [
-    'AI & web systems',
-    'computer-vision products',
-    'real-time solutions',
-    'secure web builds'
-  ];
-  const heroText = document.getElementById('hero-words');
-  const themeToggle = document.querySelector('.theme-toggle');
-  const menuToggle = document.querySelector('.menu-toggle');
-  const header = document.querySelector('header');
-  const navOverlay = document.querySelector('.nav-overlay');
-  const navLinks = document.querySelectorAll('.navlinks a');
-  const revealItems = document.querySelectorAll('.reveal');
-
-  function setTheme(theme) {
-    document.body.classList.toggle('light', theme === 'light');
-    themeToggle.textContent = theme === 'light' ? '☾' : '☀';
-    localStorage.setItem('site-theme', theme);
-  }
-
-  function initTheme() {
-    const stored = localStorage.getItem('site-theme');
-    if (stored) return setTheme(stored);
-    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-    setTheme(prefersLight ? 'light' : 'dark');
-  }
-
-  themeToggle.addEventListener('click', () => {
-    const nextTheme = document.body.classList.contains('light') ? 'dark' : 'light';
-    setTheme(nextTheme);
-  });
-
-  menuToggle.addEventListener('click', () => {
-    const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
-    menuToggle.setAttribute('aria-expanded', String(!isOpen));
-    menuToggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
-    header.classList.toggle('menu-open', !isOpen);
-  });
-
-  navOverlay.addEventListener('click', () => {
-    header.classList.remove('menu-open');
-    menuToggle.setAttribute('aria-expanded', 'false');
-    menuToggle.setAttribute('aria-label', 'Open menu');
-  });
-
-  navLinks.forEach(link => link.addEventListener('click', () => {
-    if (header.classList.contains('menu-open')) {
-      header.classList.remove('menu-open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.setAttribute('aria-label', 'Open menu');
-    }
-  }));
-
-  let currentHero = 0;
-  function rotateHeroText() {
-    heroText.classList.add('blink');
-    setTimeout(() => {
-      heroText.textContent = heroWords[currentHero];
-      currentHero = (currentHero + 1) % heroWords.length;
-      heroText.classList.remove('blink');
-    }, 180);
-  }
-  rotateHeroText();
-  setInterval(rotateHeroText, 3200);
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.15 });
-  revealItems.forEach(item => observer.observe(item));
-
-  const sectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      navLinks.forEach(link => {
-        link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
-      });
-    });
-  }, { rootMargin: '-40% 0px -45% 0px', threshold: 0 });
-  document.querySelectorAll('section[id]').forEach(section => sectionObserver.observe(section));
-
-  document.querySelectorAll('.work-item').forEach((item, index) => {
-    item.classList.add('reveal');
-    item.style.transitionDelay = `${index * 60}ms`;
-    observer.observe(item);
-  });
-
-  document.querySelectorAll('.log-line').forEach((line, index) => {
-    setTimeout(() => line.classList.add('show'), 220 * index);
-  });
-
-  initTheme();
+const heroWords=['AI & web systems','computer-vision products','real-time solutions','secure web builds'];
+const heroText=document.getElementById('hero-words'),themeToggle=document.querySelector('.theme-toggle'),menuToggle=document.querySelector('.menu-toggle'),header=document.querySelector('header'),navOverlay=document.querySelector('.nav-overlay'),navLinks=document.querySelectorAll('.navlinks a'),revealItems=document.querySelectorAll('.reveal');
+function setTheme(theme){document.body.classList.toggle('light',theme==='light');themeToggle.textContent=theme==='light'?'☾':'☀';localStorage.setItem('site-theme',theme)}
+function initTheme(){const stored=localStorage.getItem('site-theme');if(stored)return setTheme(stored);const prefersLight=window.matchMedia('(prefers-color-scheme: light)').matches;setTheme(prefersLight?'light':'dark')}
+themeToggle.addEventListener('click',()=>setTheme(document.body.classList.contains('light')?'dark':'light'));
+menuToggle.addEventListener('click',()=>{const isOpen=menuToggle.getAttribute('aria-expanded')==='true';menuToggle.setAttribute('aria-expanded',String(!isOpen));menuToggle.setAttribute('aria-label',isOpen?'Open menu':'Close menu');header.classList.toggle('menu-open',!isOpen)});
+navOverlay.addEventListener('click',()=>{header.classList.remove('menu-open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Open menu')});
+navLinks.forEach(link=>link.addEventListener('click',()=>{if(header.classList.contains('menu-open')){header.classList.remove('menu-open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Open menu')}}));
+let currentHero=0;function rotateHeroText(){heroText.classList.add('blink');setTimeout(()=>{heroText.textContent=heroWords[currentHero];currentHero=(currentHero+1)%heroWords.length;heroText.classList.remove('blink')},180)}rotateHeroText();setInterval(rotateHeroText,3200);
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:.15});revealItems.forEach(item=>observer.observe(item));
+const sectionObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(!entry.isIntersecting)return;navLinks.forEach(link=>link.classList.toggle('active',link.getAttribute('href')===`#${entry.target.id}`))})},{rootMargin:'-40% 0px -45% 0px',threshold:0});document.querySelectorAll('section[id]').forEach(section=>sectionObserver.observe(section));
+document.querySelectorAll('.work-item').forEach((item,index)=>{item.classList.add('reveal');item.style.transitionDelay=`${index*60}ms`;observer.observe(item)});
+document.querySelectorAll('.log-line').forEach((line,index)=>setTimeout(()=>line.classList.add('show'),220*index));initTheme();
 </script>
-
 </body>
 </html>
