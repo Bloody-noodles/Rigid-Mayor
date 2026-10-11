@@ -71,7 +71,7 @@ It can process live or demo video, track subjects, analyze movement, record even
 
 ## Contact
 
-**Email:** wayaoluwafemi@gmail.com
+**Email:** femiwaya183@gmail.com
 
 ---
 
