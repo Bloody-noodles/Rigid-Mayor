@@ -1,315 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oluwafemi Waya — VICE MAYOR</title>
-<meta name="description" content="Oluwafemi Waya — web experiences, digital products, software engineering, and practical AI systems.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8f1">
+  <meta name="description" content="Oluwafemi Waya — a master portfolio spanning web development, software engineering, computer vision, and AI experiments.">
+  <title>Oluwafemi Waya — Master Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page-shell">
-    <aside class="sidebar reveal">
-      <div class="brand-wrap">
-        <span class="brand-kicker">Portfolio</span>
-        <h1>Oluwafemi Waya</h1>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top">Oluwafemi <span>✳</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Works</a><a href="#about">About</a><a href="#focus">Focus</a><a href="#contact" class="nav-cta">Let's talk</a>
       </div>
+    </nav>
+  </header>
 
-      <div class="portrait-wrap">
-        <img src="file_000000000d8882438aef3fe6b892262a.png" alt="Portrait of Oluwafemi Waya">
+  <main>
+    <section class="hero container" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Computer Science · Builder · Nigeria / Remote</p>
+        <h1>I'm Oluwafemi,<br>building <span class="highlight">digital products</span><br>and intelligent systems.</h1>
+        <p class="hero-lead">A master collection of my work across websites, software engineering, computer vision, and practical AI — from client-facing digital experiences to experimental systems.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#work">Explore my work <span>↘</span></a><a class="button button-light" href="#contact">Get in touch</a></div>
+        <div class="hero-pills"><span>Web development</span><span>Software engineering</span><span>AI & computer vision</span></div>
       </div>
-
-      <p class="bio">Computer Science graduate building useful web experiences, digital products, and intelligent software systems.</p>
-
-      <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode" aria-pressed="false">
-        <span class="toggle-label">Dark mode</span>
-        <span class="toggle-indicator" aria-hidden="true"></span>
-      </button>
-
-      <nav class="side-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="meta-list">
-        <div><span>Location</span><strong>Nigeria / Remote</strong></div>
-        <div><span>Focus</span><strong>Web + Software + AI</strong></div>
-        <div><span>Status</span><strong>Open for projects</strong></div>
+      <div class="hero-visual reveal">
+        <div class="portrait-frame"><img src="file_000000000d8882438aef3fe6b892262a.png" alt="Portrait of Oluwafemi Waya"></div>
+        <div class="floating-note"><span class="note-icon">✳</span><div><strong>Curiosity to creation</strong><small>Building, learning, improving.</small></div></div>
+        <span class="visual-orbit orbit-one"></span><span class="visual-orbit orbit-two"></span>
       </div>
+    </section>
 
-      <div class="social-links">
-        <a href="mailto:femiwaya183@gmail.com">Email</a>
-        <a href="https://github.com/Bloody-noodles" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/oluwafemi-waya-1219a13a2" target="_blank" rel="noreferrer">LinkedIn</a>
+    <section class="intro-strip container reveal" id="focus">
+      <div><span class="strip-number">01</span><strong>Web & digital products</strong><p>Responsive websites and useful customer experiences.</p></div>
+      <div><span class="strip-number">02</span><strong>Software & computer vision</strong><p>Practical systems, detection, tracking, and analytics.</p></div>
+      <div><span class="strip-number">03</span><strong>AI research & experiments</strong><p>Learning by building and testing ideas from the ground up.</p></div>
+    </section>
+
+    <section class="section container" id="work">
+      <div class="section-heading reveal"><div><p class="section-kicker">THE BODY OF WORK</p><h2>Selected <span class="highlight">projects.</span></h2></div><p>One place for the full picture: shipped websites, deployed applications, prototypes, and ongoing explorations. Project status is labelled so the scope stays clear.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured reveal"><div class="project-top"><span class="project-index">01 / AI & COMPUTER VISION</span><span class="project-status live">Deployed</span></div><div class="project-art art-vision"><span class="art-crosshair">◎</span><span class="art-caption">VISION / TRACK / ANALYZE</span><div class="scan-line"></div></div><div class="project-body"><h3>VisionSense-AI</h3><p>Real-time human detection and multi-object tracking using YOLO11n and ByteTrack, with movement analysis, event history, session metrics, and a dashboard connected to a FastAPI backend.</p><div class="tags"><span>YOLO11n</span><span>ByteTrack</span><span>FastAPI</span><span>Computer Vision</span></div><div class="project-links"><a href="https://vision-sense-ai-wine.vercel.app/" target="_blank" rel="noreferrer">Live demo ↗</a><a href="https://github.com/Bloody-noodles/VisionSense-AI" target="_blank" rel="noreferrer">Source code ↗</a><a href="https://github.com/Bloody-noodles/Person-Dataset" target="_blank" rel="noreferrer">Dataset / training ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">02 / WEB PRODUCT</span><span class="project-status live">Deployed</span></div><div class="project-art art-commerce"><span class="art-symbol">✳</span><span class="art-caption">DISCOVER · ENQUIRE · CONNECT</span></div><div class="project-body"><h3>Dee-Faith Pride Multi-Biz</h3><p>A digital-services platform with service discovery, category browsing, WhatsApp enquiries, appointment booking, promotions, and a staff-managed order workflow.</p><div class="tags"><span>Astro</span><span>TypeScript</span><span>Tailwind CSS</span></div><div class="project-links"><a href="https://dee-faith-pride.vercel.app/" target="_blank" rel="noreferrer">Live site ↗</a><a href="https://github.com/Bloody-noodles/Digital-Service-Commercial-Website" target="_blank" rel="noreferrer">Source code ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">03 / COMPUTER VISION</span><span class="project-status">Final-year project</span></div><div class="project-art art-security"><span class="security-grid">⌗</span><span class="art-caption">OBSERVE · DETECT · RESPOND</span></div><div class="project-body"><h3>Campus Security System</h3><p>A computer-vision surveillance system combining object detection and tracking with threat alerts, evidence capture, event logging, and an analytics dashboard.</p><div class="tags"><span>Computer Vision</span><span>Detection</span><span>Analytics</span></div><div class="project-links"><a href="https://github.com/Bloody-noodles/RealTime_Campus_Security_System" target="_blank" rel="noreferrer">Source code ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">04 / AI PROTOTYPE</span><span class="project-status">Local prototype</span></div><div class="project-art art-sightline"><span class="sightline-eye">◉</span><span class="art-caption">CUSTOM DETECTION / 11 CLASSES</span></div><div class="project-body"><h3>Sightline</h3><p>A research prototype for custom YOLO11n detection across 11 object classes, with ByteTrack, a FastAPI inference service, and a browser-based webcam dashboard. Inference runs locally.</p><div class="tags"><span>YOLO11n</span><span>ByteTrack</span><span>FastAPI</span></div><div class="project-links"><a href="https://github.com/Bloody-noodles/Sightline" target="_blank" rel="noreferrer">Source code ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">05 / WEB DEVELOPMENT</span><span class="project-status live">Live website</span></div><div class="project-art art-hair"><span class="art-symbol">N.</span><span class="art-caption">STYLE · CRAFT · TRANSFORM</span></div><div class="project-body"><h3>Nikihairstyles</h3><p>A hair-stylist brand website with service presentation, a transformation gallery, and a WhatsApp-first booking flow designed to turn visits into enquiries.</p><div class="tags"><span>Web Design</span><span>Tailwind CSS</span><span>Business website</span></div><div class="project-links"><a href="https://nikkihair.netlify.app/" target="_blank" rel="noreferrer">Live site ↗</a><a href="https://github.com/Bloody-noodles/nikkihair" target="_blank" rel="noreferrer">Source code ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">06 / AUTOMOTIVE</span><span class="project-status live">Live concept</span></div><div class="project-art art-auto"><span class="car-line">↗</span><span class="art-caption">INVENTORY / IMPORTS / SHOWROOM</span></div><div class="project-body"><h3>AbeAutos</h3><p>A vehicle-dealership concept with featured inventory, import-service information, and a showroom-style browsing experience.</p><div class="tags"><span>React</span><span>TypeScript</span><span>Tailwind</span></div><div class="project-links"><a href="https://abegautos.lovable.app/" target="_blank" rel="noreferrer">Live site ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">07 / AUTOMOTIVE</span><span class="project-status live">Live concept</span></div><div class="project-art art-debola"><span class="art-symbol">DA.</span><span class="art-caption">DRIVE YOUR NEXT MOVE</span></div><div class="project-body"><h3>Debola Autos</h3><p>An automotive sales landing-page concept focused on clear service presentation and a direct path for prospective customers to enquire.</p><div class="tags"><span>Landing page</span><span>Web design</span></div><div class="project-links"><a href="https://debola-autos.netlify.app/" target="_blank" rel="noreferrer">Live site ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">08 / EVENTS</span><span class="project-status live">Live website</span></div><div class="project-art art-events"><span class="art-symbol">D’</span><span class="art-caption">MOMENTS MADE MEMORABLE</span></div><div class="project-body"><h3>D’Podium Events</h3><p>An event-centre showcase for venue hire, weddings, conferences, and planning services, with a structured enquiry path.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://dpodium.netlify.app/" target="_blank" rel="noreferrer">Live site ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">09 / INTERACTIVE WEB</span><span class="project-status live">Live concept</span></div><div class="project-art art-aviation"><span class="art-symbol">✈</span><span class="art-caption">FLIGHT / DESTINATION / TERMINAL</span></div><div class="project-body"><h3>Aveion Airline</h3><p>An airline and airport-experience concept featuring flight boards, destination exploration, and terminal updates.</p><div class="tags"><span>JavaScript</span><span>UI design</span><span>Interaction</span></div><div class="project-links"><a href="https://aveion-airline.netlify.app/" target="_blank" rel="noreferrer">Live site ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">10 / E-COMMERCE</span><span class="project-status live">Live concept</span></div><div class="project-art art-trampler"><span class="art-symbol">T.</span><span class="art-caption">SNEAKERS / EVERYDAY MOVEMENT</span></div><div class="project-body"><h3>Trampler</h3><p>A men's sneaker storefront concept for presenting footwear products in a focused shopping experience.</p><div class="tags"><span>E-commerce</span><span>Product UI</span></div><div class="project-links"><a href="https://trampler.netlify.app/" target="_blank" rel="noreferrer">Live site ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">11 / FOOD & CULTURE</span><span class="project-status live">Live concept</span></div><div class="project-art art-naija"><span class="art-symbol">N/F</span><span class="art-caption">FLAVOUR · HERITAGE · STORIES</span></div><div class="project-body"><h3>Naija Flavours</h3><p>A Nigerian cuisine concept built around recipes, food stories, and cultural discovery.</p><div class="tags"><span>Content design</span><span>Food</span><span>Culture</span></div><div class="project-links"><a href="https://naija-flavours.netlify.app/" target="_blank" rel="noreferrer">Live site ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">12 / HOSPITALITY</span><span class="project-status live">Live concept</span></div><div class="project-art art-havard"><span class="art-symbol">H.</span><span class="art-caption">DINING / LOUNGE / EXPERIENCE</span></div><div class="project-body"><h3>Havard Restaurant</h3><p>A restaurant and lounge web concept presenting the venue and its dining experience.</p><div class="tags"><span>Hospitality</span><span>Web design</span></div><div class="project-links"><a href="https://havardresturant.netlify.app/" target="_blank" rel="noreferrer">Live site ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">13 / ARCHITECTURE</span><span class="project-status live">Live concept</span></div><div class="project-art art-braintrack"><span class="art-symbol">B/</span><span class="art-caption">DESIGN / STRUCTURE / BUILD</span></div><div class="project-body"><h3>Braintrack Design & Construction</h3><p>A portfolio-style showcase concept for an architecture and construction practice, presenting services and project identity.</p><div class="tags"><span>Architecture</span><span>Portfolio website</span></div><div class="project-links"><a href="https://braintrack-architect-showcase.lovable.app/" target="_blank" rel="noreferrer">Live concept ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">14 / LANGUAGE MODELS</span><span class="project-status">Research / training</span></div><div class="project-art art-naijalm"><span class="art-symbol">NaijaLM</span><span class="art-caption">LANGUAGE · CULTURE · MODELS</span></div><div class="project-body"><h3>NaijaLM</h3><p>An experimental small language model focused on Nigerian Pidgin, with Yoruba as a secondary language. Work includes corpus preparation, character-level tokenization, Transformer training, evaluation, and reproducibility improvements.</p><div class="tags"><span>Python</span><span>PyTorch</span><span>Transformers</span><span>Nigerian languages</span></div><div class="project-links"><a href="https://github.com/Bloody-noodles" target="_blank" rel="noreferrer">Explore GitHub ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-index">15 / CYBERSECURITY</span><span class="project-status">Exploration stage</span></div><div class="project-art art-aegis"><span class="art-symbol">⬡</span><span class="art-caption">DIGITAL ASSET / CYBER DEFENCE</span></div><div class="project-body"><h3>AegisAI</h3><p>An early-stage research and product exploration into protecting people and organizations from cyber threats, with a particular interest in digital assets and blockchain security. Product direction remains open while the problem space is researched.</p><div class="tags"><span>Cybersecurity</span><span>AI research</span><span>Blockchain security</span></div><div class="project-links"><a href="https://github.com/Bloody-noodles" target="_blank" rel="noreferrer">Explore GitHub ↗</a></div></div></article>
       </div>
-    </aside>
+      <div class="portfolio-note reveal"><span>↗</span><p>Looking specifically for websites and web apps? Visit my <a href="https://oluwafemi-murex.vercel.app/" target="_blank" rel="noreferrer">specialist web developer portfolio</a> for a focused presentation of that work.</p></div>
+    </section>
 
-    <main class="content">
-      <section class="hero reveal" id="top">
-        <p class="eyebrow">Available for selected projects</p>
-        <h2>I build <span class="accent">digital products</span>, web experiences, and intelligent systems.</h2>
-        <p class="lead">I’m Oluwafemi Waya — a Computer Science graduate who builds client-facing websites, practical software, and AI-powered systems designed to solve real problems.</p>
-        <div class="cta-row">
-          <a class="btn" href="#work">View work</a>
-          <a class="btn secondary" href="#contact">Get in touch</a>
-        </div>
-        <div class="focus-row">
-          <span>Web experiences</span>
-          <span>Digital products</span>
-          <span>AI & computer vision</span>
-        </div>
-      </section>
+    <section class="about-section section container" id="about">
+      <div class="section-heading reveal"><div><p class="section-kicker">A LITTLE ABOUT ME</p><h2>Curious by nature.<br><span class="highlight">Builder by practice.</span></h2></div><p>I enjoy moving from an idea to something tangible: understanding the problem, learning the tools, building a version, and improving it through testing.</p></div>
+      <div class="about-grid reveal">
+        <div class="about-copy"><p>My work brings together <strong>design-aware web development, product thinking, and practical engineering.</strong> I build websites and digital experiences for different use cases, alongside software projects that explore automation, computer vision, and intelligent systems.</p><p>I care about making the underlying idea clear, the experience usable, and the implementation honest about what is live, experimental, or still in progress. This master portfolio is the broad view of that journey.</p></div>
+        <div class="skills-panel"><div><h3>Web & product</h3><p>HTML · CSS · JavaScript · React · TypeScript · Astro · Tailwind CSS · Supabase · APIs</p></div><div><h3>Software & AI</h3><p>Python · PyTorch · OpenCV · YOLO · ByteTrack · Flask · FastAPI</p></div><div><h3>Current interests</h3><p>Computer vision · Nigerian language models · cybersecurity · digital-asset protection</p></div></div>
+      </div>
+    </section>
 
-      <section id="about" class="reveal">
-        <p class="section-tag">01 / About</p>
-        <div class="about-grid">
-          <div class="about-copy">
-            <p>My work brings together <strong>design-aware web development, product thinking, and practical engineering.</strong> I build websites and digital experiences for different use cases, alongside software projects that explore automation, computer vision, and intelligent systems.</p>
-            <p>Across my projects, I focus on making the underlying idea clear, the experience usable, and the implementation honest about what is live, experimental, or still in progress.</p>
-            <p>For a more focused selection of my website work, visit my <a href="https://oluwafemi-murex.vercel.app/" target="_blank" rel="noreferrer"><strong>specialist web portfolio</strong></a>.</p>
-          </div>
-
-          <div class="stack-card">
-            <div>
-              <h3>Software / AI</h3>
-              <ul>
-                <li>Python</li>
-                <li>OpenCV</li>
-                <li>YOLO / ByteTrack</li>
-                <li>Flask / FastAPI</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Web / Product</h3>
-              <ul>
-                <li>HTML / CSS / JavaScript</li>
-                <li>React / TypeScript</li>
-                <li>Astro / Tailwind CSS</li>
-                <li>Supabase / APIs</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="work" class="reveal">
-        <p class="section-tag">02 / Selected work</p>
-        <div class="work-list">
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>VisionSense-AI</h3>
-              <span>Deployed AI project</span>
-            </div>
-            <p>Real-time human detection and multi-object tracking using YOLO11n and ByteTrack, with movement analysis, event history, session metrics, and a dashboard connected to a FastAPI backend.</p>
-            <div class="work-links">
-              <a href="https://vision-sense-ai-wine.vercel.app/" target="_blank" rel="noreferrer">Live demo</a>
-              <a href="https://github.com/Bloody-noodles/VisionSense-AI" target="_blank" rel="noreferrer">Source</a>
-              <a href="https://github.com/Bloody-noodles/Person-Dataset" target="_blank" rel="noreferrer">Dataset / training</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>Digital-Service Platform</h3>
-              <span>Deployed web product</span>
-            </div>
-            <p>A service-discovery and commerce platform with category browsing, WhatsApp enquiries, appointment booking, promotions, and a staff-managed order workflow.</p>
-            <div class="work-links">
-              <a href="https://dee-faith-pride.vercel.app/" target="_blank" rel="noreferrer">Live site</a>
-              <a href="https://github.com/Bloody-noodles/Digital-Service-Commercial-Website" target="_blank" rel="noreferrer">Source code</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>Campus Security System</h3>
-              <span>Final-year project</span>
-            </div>
-            <p>A computer-vision surveillance system combining object detection and tracking with threat alerts, evidence capture, event logging, and an analytics dashboard.</p>
-            <div class="work-links">
-              <a href="https://github.com/Bloody-noodles/RealTime_Campus_Security_System" target="_blank" rel="noreferrer">Source code</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>Sightline</h3>
-              <span>Computer-vision prototype</span>
-            </div>
-            <p>A research prototype for custom YOLO11n detection across 11 object classes, with ByteTrack, a FastAPI inference service, and a browser-based webcam dashboard. The inference service runs locally.</p>
-            <div class="work-links">
-              <a href="https://github.com/Bloody-noodles/Sightline" target="_blank" rel="noreferrer">Source code</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>Nikihairstyles</h3>
-              <span>Business website</span>
-            </div>
-            <p>A hair-stylist brand website with service presentation, a transformation gallery, and a WhatsApp-first booking flow designed to turn visits into enquiries.</p>
-            <div class="work-links">
-              <a href="https://nikkihair.netlify.app/" target="_blank" rel="noreferrer">Live site</a>
-              <a href="https://github.com/Bloody-noodles/nikkihair" target="_blank" rel="noreferrer">Source code</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>AbeAutos</h3>
-              <span>Dealership web concept</span>
-            </div>
-            <p>A vehicle-dealership concept with featured inventory, import-service information, and a showroom-style browsing experience.</p>
-            <div class="work-links">
-              <a href="https://abegautos.lovable.app/" target="_blank" rel="noreferrer">Live site</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>Debola Autos</h3>
-              <span>Automotive landing page</span>
-            </div>
-            <p>An automotive sales landing-page concept focused on clear service presentation and a direct path for prospective customers to enquire.</p>
-            <div class="work-links">
-              <a href="https://debola-autos.netlify.app/" target="_blank" rel="noreferrer">Live site</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>D’Podium Events</h3>
-              <span>Events website</span>
-            </div>
-            <p>An event-centre showcase for venue hire, weddings, conferences, and planning services, with a structured enquiry path.</p>
-            <div class="work-links">
-              <a href="https://dpodium.netlify.app/" target="_blank" rel="noreferrer">Live site</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>Aveion Airline</h3>
-              <span>Interactive web concept</span>
-            </div>
-            <p>An airline and airport-experience concept featuring flight boards, destination exploration, and terminal updates.</p>
-            <div class="work-links">
-              <a href="https://aveion-airline.netlify.app/" target="_blank" rel="noreferrer">Live site</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>Trampler</h3>
-              <span>E-commerce concept</span>
-            </div>
-            <p>A men's sneaker storefront concept for presenting footwear products in a focused shopping experience.</p>
-            <div class="work-links">
-              <a href="https://trampler.netlify.app/" target="_blank" rel="noreferrer">Live site</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>Naija Flavours</h3>
-              <span>Food and content website</span>
-            </div>
-            <p>A Nigerian cuisine concept built around recipes, food stories, and cultural discovery.</p>
-            <div class="work-links">
-              <a href="https://naija-flavours.netlify.app/" target="_blank" rel="noreferrer">Live site</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>Havard Restaurant</h3>
-              <span>Restaurant website concept</span>
-            </div>
-            <p>A restaurant and lounge web concept presenting the venue and its dining experience.</p>
-            <div class="work-links">
-              <a href="https://havardresturant.netlify.app/" target="_blank" rel="noreferrer">Live site</a>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <div class="work-topline">
-              <h3>Braintrack Design & Construction</h3>
-              <span>Architecture showcase concept</span>
-            </div>
-            <p>A portfolio-style showcase concept for an architecture and construction practice, presenting services and project identity.</p>
-            <div class="work-links">
-              <a href="https://braintrack-architect-showcase.lovable.app/" target="_blank" rel="noreferrer">Live concept</a>
-            </div>
-          </article>
-        </div>
-        <p class="about-copy" style="margin-top: 1.5rem;">Explore more website work in the <a href="https://oluwafemi-murex.vercel.app/" target="_blank" rel="noreferrer"><strong>specialist web portfolio</strong></a>, or browse the code behind my projects on <a href="https://github.com/Bloody-noodles" target="_blank" rel="noreferrer"><strong>GitHub</strong></a>.</p>
-      </section>
-
-      <section id="contact" class="reveal">
-        <p class="section-tag">03 / Contact</p>
-        <div class="contact-box">
-          <div>
-            <p class="contact-head">Let’s build something real.</p>
-          </div>
-          <div class="contact-links">
-            <a href="mailto:femiwaya183@gmail.com">femiwaya183@gmail.com</a>
-            <a href="https://github.com/Bloody-noodles" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/oluwafemi-waya-1219a13a2" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-
+    <section class="contact-section container" id="contact">
+      <div class="contact-panel reveal"><div><p class="section-kicker">HAVE A PROJECT IN MIND?</p><h2>Let's build something <span class="highlight">useful.</span></h2><p>For website projects, software collaboration, or a conversation about the work, feel free to reach out.</p></div><div class="contact-actions"><a class="button button-dark" href="mailto:femiwaya183@gmail.com">Send me an email ↗</a><a class="button button-light" href="https://www.linkedin.com/in/oluwafemi-waya-1219a13a2" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="button button-light" href="https://github.com/Bloody-noodles" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
+      <footer class="footer"><a class="brand" href="#top">Oluwafemi <span>✳</span></a><span>Master portfolio · Web · Software · AI</span><a href="#top">Back to top ↑</a></footer>
+    </section>
+  </main>
   <script>
-    const revealItems = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-
-    revealItems.forEach((item) => observer.observe(item));
-
-    const navLinks = document.querySelectorAll('.side-nav a');
-    const sections = document.querySelectorAll('main section[id]');
-    const navObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        navLinks.forEach((link) => {
-          const active = link.getAttribute('href') === '#' + entry.target.id;
-          link.classList.toggle('active', active);
-        });
-      });
-    }, { threshold: 0.45, rootMargin: '-15% 0px -35% 0px' });
-
-    sections.forEach((section) => navObserver.observe(section));
-
-    const themeToggle = document.querySelector('.theme-toggle');
-    const toggleLabel = document.querySelector('.toggle-label');
-
-    const applyTheme = (theme) => {
-      const isLight = theme === 'light';
-      document.body.dataset.theme = theme;
-      themeToggle.setAttribute('aria-pressed', String(isLight));
-      toggleLabel.textContent = isLight ? 'Light mode' : 'Dark mode';
-      localStorage.setItem('portfolio-theme', theme);
-    };
-
-    const savedTheme = localStorage.getItem('portfolio-theme');
-    applyTheme(savedTheme || 'dark');
-
-    themeToggle.addEventListener('click', () => {
-      const nextTheme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
-      applyTheme(nextTheme);
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
     });
+    navLinks.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }));
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
   </script>
 </body>
 </html>
