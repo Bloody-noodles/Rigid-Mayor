@@ -68,7 +68,7 @@
         <div><p class="section-tag">02 / Things I've made</p><h2>A little bit of<br><span class="text-accent">this & that.</span></h2></div>
         <p class="work-intro">Different problems, different tools. Here’s a selection of software, AI experiments, and digital experiences I've worked on.</p>
       </div>
-      <div class="project-group-label"><span>01</span> SOFTWARE & INTELLIGENT SYSTEMS <i></i></div>
+      <div class="project-group-label"><span>01</span> SOFTWARE, AI & WEB EXPERIENCES <i></i></div>
       <div class="work-list work-list-featured">
         <article class="work-card">
             <div class="work-topline">
@@ -232,50 +232,40 @@
   </main>
   <script>
     const revealItems = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    revealItems.forEach((item, index) => { item.style.setProperty('--reveal-delay', `${Math.min(index * 90, 360)}ms`); observer.observe(item); });
+    if ('IntersectionObserver' in window && !reduceMotion) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealItems.forEach((item, index) => {
+        item.style.setProperty('--reveal-delay', Math.min(index * 90, 270) + 'ms');
+        revealObserver.observe(item);
+      });
+    } else {
+      revealItems.forEach((item) => item.classList.add('visible'));
+    }
 
     const navLinks = document.querySelectorAll('.top-nav a[href^="#"]');
     const sections = document.querySelectorAll('main section[id]');
-    const navObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        navLinks.forEach((link) => {
-          const active = link.getAttribute('href') === '#' + entry.target.id;
-          link.classList.toggle('active', active);
+    if ('IntersectionObserver' in window) {
+      const navObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          navLinks.forEach((link) => {
+            const active = link.getAttribute('href') === '#' + entry.target.id;
+            link.classList.toggle('active', active);
+          });
         });
-      });
-    }, { threshold: 0.45, rootMargin: '-15% 0px -35% 0px' });
-
-    sections.forEach((section) => navObserver.observe(section));
-
-    const themeToggle = document.querySelector('.theme-toggle');
-    const toggleLabel = document.querySelector('.toggle-label');
-
-    const applyTheme = (theme) => {
-      const isLight = theme === 'light';
-      document.body.dataset.theme = theme;
-      themeToggle.setAttribute('aria-pressed', String(isLight));
-      toggleLabel.textContent = isLight ? 'Light mode' : 'Dark mode';
-      try { localStorage.setItem('portfolio-theme', theme); } catch (error) { /* Storage may be unavailable. */ }
-    };
-
-    let savedTheme = null;
-    try { savedTheme = localStorage.getItem('portfolio-theme'); } catch (error) { /* Use the default theme. */ }
-    applyTheme(savedTheme || 'dark');
-
-    themeToggle.addEventListener('click', () => {
-      const nextTheme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
-      applyTheme(nextTheme);
-    });
+      }, { threshold: 0.25, rootMargin: '-12% 0px -45% 0px' });
+      sections.forEach((section) => navObserver.observe(section));
+    }
   </script>
 </body>
 </html>
