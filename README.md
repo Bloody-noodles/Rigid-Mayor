@@ -71,4 +71,4 @@ For a more focused selection of web-development work:
 
 ## Main Portfolio
 
-https://rigidmayor.netlify.app/
+https://bloody-noodles.github.io/Rigid-Mayor/
