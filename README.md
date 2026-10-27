@@ -1,74 +1,72 @@
 # VICE MAYOR — Oluwafemi Waya
 
-> **AI, computer vision, and web products built for real use.**
+> **Web experiences, digital products, software engineering, and practical AI systems.**
 
-Personal portfolio of **Oluwafemi Waya**, a Computer Science graduate focused on practical AI systems, computer vision, and product-minded web development.
+This repository contains the source for my overall portfolio. It brings together selected website builds, digital products, and software projects, while my [specialist web portfolio](https://oluwafemi-murex.vercel.app/) provides a more focused presentation of website work.
 
-## About
+## Selected software and product projects
 
-This repository contains the source for my main portfolio. It highlights selected work across:
+### VisionSense-AI
 
-- Artificial intelligence and computer vision
-- Real-time detection and tracking systems
-- Full-stack and service-oriented web products
-- Research prototypes and practical software engineering
-
-## Selected Work
-
-### 1. VisionSense-AI — Flagship project
-
-Real-time human detection and multi-object tracking built with **YOLO11n** and **ByteTrack**. The system supports movement analysis, entry/exit events, occupancy metrics, event history, and a dashboard connected to a FastAPI backend.
+Real-time human detection and multi-object tracking built with **YOLO11n** and **ByteTrack**, with movement analysis, entry/exit events, occupancy metrics, event history, and a dashboard connected to a FastAPI backend.
 
 - **Live frontend:** https://vision-sense-ai-wine.vercel.app/
 - **FastAPI backend:** https://visionsense-ai-ozln.onrender.com/
 - **Source:** https://github.com/Bloody-noodles/VisionSense-AI
 - **Dataset and training artifacts:** https://github.com/Bloody-noodles/Person-Dataset
 
-**Stack:** Python, OpenCV, Ultralytics YOLO11n, ByteTrack, FastAPI, WebSockets, Next.js, React, TypeScript, Tailwind CSS, Vercel, Render.
+### Digital-Service Platform
 
-### 2. Digital-Service Platform
-
-A service-discovery and commerce website with category browsing, service-specific WhatsApp enquiries, appointment booking, promotions, and a staff-managed order workflow. Payment reports are submitted for manual review; the project should not be described as automatic payment processing or automatic fulfilment.
+A service-discovery and commerce website with category browsing, service-specific WhatsApp enquiries, appointment booking, promotions, and a staff-managed order workflow. Payment reports are submitted for manual review; payment processing and fulfilment should not be described as fully automated.
 
 - **Live site:** https://dee-faith-pride.vercel.app/
 - **Source:** https://github.com/Bloody-noodles/Digital-Service-Commercial-Website
 
-**Stack:** Astro, Tailwind CSS, Supabase-backed workflows, Vercel.
-
-### 3. Campus Security System
+### Campus Security System
 
 Final-year computer-vision project combining object detection and tracking for surveillance, threat alerts, screenshot capture, event logging, and an analytics dashboard.
 
 - **Source:** https://github.com/Bloody-noodles/RealTime_Campus_Security_System
 
-**Stack:** Python, Flask, OpenCV, YOLO, ByteTrack, SQLite.
+### Sightline
 
-### 4. Sightline
-
-A computer-vision research prototype using a custom YOLO11n model across 11 object classes, with a FastAPI inference backend, ByteTrack, and a browser webcam dashboard. The Python inference service runs locally; the project should be presented as a prototype rather than a fully hosted inference product.
+Computer-vision research prototype using a custom YOLO11n model across 11 object classes, with a FastAPI inference backend, ByteTrack, and a browser webcam dashboard. The Python inference service runs locally; this is a prototype, not a fully hosted inference product.
 
 - **Source:** https://github.com/Bloody-noodles/Sightline
+- **Reported evaluation:** precision 71.9%, recall 54.3%, mAP@50 60.2%, and mAP@50–95 50.9%
 
-**Reported evaluation:** precision 71.9%, recall 54.3%, mAP@50 60.2%, and mAP@50–95 50.9%.
+## Web experiences and concepts
 
-### In development — Catalog Rescue
+These projects showcase different website and product concepts. A live link means the site is hosted; it does not necessarily mean the site is a commissioned production service.
 
-Catalog Rescue is currently a local Streamlit prototype for e-commerce catalog quality checks, safe formatting normalization, and audit-ready reports. It is not yet published as a public repository or live demo, so it is intentionally not linked as a released project.
+| Project | What it explores | Live site |
+| --- | --- | --- |
+| Nikihairstyles | Hair-stylist brand presentation, transformation gallery, and WhatsApp-first booking | https://nikkihair.netlify.app/ |
+| AbeAutos | Dealership concept with vehicle inventory and import-service information | https://abegautos.lovable.app/ |
+| Debola Autos | Automotive sales landing-page concept | https://debola-autos.netlify.app/ |
+| D’Podium Events | Event-centre, venue-hire, and planning-services showcase | https://dpodium.netlify.app/ |
+| Aveion Airline | Airline/airport interface concept with flight boards and destination exploration | https://aveion-airline.netlify.app/ |
+| Trampler | Men's sneaker e-commerce concept | https://trampler.netlify.app/ |
+| Naija Flavours | Nigerian recipes, food stories, and cultural discovery | https://naija-flavours.netlify.app/ |
+| Havard Restaurant | Restaurant and lounge website concept | https://havardresturant.netlify.app/ |
+| Braintrack Design & Construction | Architecture and construction showcase concept | https://braintrack-architect-showcase.lovable.app/ |
 
-## Specialist Web Portfolio
+## Specialist web portfolio
 
-For a more focused selection of web-development work:
+- **Live portfolio:** https://oluwafemi-murex.vercel.app/
+- **Portfolio source:** https://github.com/Bloody-noodles/Oluwafemi
 
-- **Portfolio:** https://oluwafemi-murex.vercel.app/
-- **Source:** https://github.com/Bloody-noodles/Oluwafemi
+## In development — Catalog Rescue
 
-## Core Technologies
+Catalog Rescue is a local Streamlit prototype for e-commerce catalog quality checks, safe formatting normalization, and audit-ready reports. It is not yet published as a public repository or live demo, so it is intentionally not listed as a released project.
+
+## Core technologies
 
 - **AI / Computer Vision:** Python, YOLO11n, OpenCV, ByteTrack, Roboflow
 - **Backend:** FastAPI, Flask, REST APIs, WebSockets, SQLite
 - **Frontend:** HTML, CSS, JavaScript, React, Next.js, TypeScript, Astro, Tailwind CSS
-- **Deployment and tooling:** Vercel, Render, Netlify, GitHub
+- **Data and deployment:** Supabase, Vercel, Render, Netlify, GitHub
 
-## Main Portfolio
+## Main portfolio
 
 https://bloody-noodles.github.io/Rigid-Mayor/
