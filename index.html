@@ -7,70 +7,99 @@
 <meta name="description" content="Oluwafemi Waya — web experiences, digital products, software engineering, and practical AI systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Oluwafemi Waya home">femi<span>✳</span></a>
-    <nav class="top-nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#work">Selected work</a><a href="https://oluwafemi-murex.vercel.app/" target="_blank" rel="noreferrer">Web portfolio ↗</a>
-    </nav>
-    <a class="header-contact" href="#contact">Let's talk <span>↗</span></a>
-  </header>
+  <div class="page-shell">
+    <aside class="sidebar reveal">
+      <div class="brand-wrap">
+        <span class="brand-kicker">Portfolio</span>
+        <h1>Oluwafemi Waya</h1>
+      </div>
 
-  <main class="content">
-    <section class="hero reveal" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> INDEPENDENT DEVELOPER · NIGERIA / REMOTE</p>
-        <h1>I make ideas<br><span class="highlight-word">work.</span><span class="scribble" aria-hidden="true">✳</span></h1>
-        <p class="lead">I'm Oluwafemi Waya — I build web experiences, useful software, and computer-vision systems with curiosity, care, and a practical mindset.</p>
+      <div class="portrait-wrap">
+        <img src="file_000000000d8882438aef3fe6b892262a.png" alt="Portrait of Oluwafemi Waya">
+      </div>
+
+      <p class="bio">Computer Science graduate building useful web experiences, digital products, and intelligent software systems.</p>
+
+      <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode" aria-pressed="false">
+        <span class="toggle-label">Dark mode</span>
+        <span class="toggle-indicator" aria-hidden="true"></span>
+      </button>
+
+      <nav class="side-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="meta-list">
+        <div><span>Location</span><strong>Nigeria / Remote</strong></div>
+        <div><span>Focus</span><strong>Web + Software + AI</strong></div>
+        <div><span>Status</span><strong>Open for projects</strong></div>
+      </div>
+
+      <div class="social-links">
+        <a href="mailto:femiwaya183@gmail.com">Email</a>
+        <a href="https://github.com/Bloody-noodles" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/oluwafemi-waya-1219a13a2" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="hero reveal" id="top">
+        <p class="eyebrow">Available for selected projects</p>
+        <h2>I build <span class="accent">digital products</span>, web experiences, and intelligent systems.</h2>
+        <p class="lead">I’m Oluwafemi Waya — a Computer Science graduate who builds client-facing websites, practical software, and AI-powered systems designed to solve real problems.</p>
         <div class="cta-row">
-          <a class="btn" href="#work">Explore the work <span>↘</span></a>
-          <a class="text-link" href="#contact">Have a project? Say hello ↗</a>
+          <a class="btn" href="#work">View work</a>
+          <a class="btn secondary" href="#contact">Get in touch</a>
         </div>
-        <div class="focus-row"><span>Web & digital products</span><span>Software engineering</span><span>AI / computer vision</span></div>
-      </div>
-      <div class="hero-art" aria-label="A playful illustration of software, ideas and systems">
-        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
-        <div class="art-sticker sticker-top">IDEAS IN<br>PROGRESS ↗</div>
-        <div class="art-window">
-          <div class="window-bar"><i></i><i></i><i></i><span>femi.build()</span></div>
-          <div class="window-code"><span>01</span> const idea = <b>"something useful"</b>;<br><span>02</span> build(idea);<br><span>03</span> <em>// keep making things</em></div>
-          <div class="window-bottom"><span>DESIGN × ENGINEERING</span><b>✳</b></div>
+        <div class="focus-row">
+          <span>Web experiences</span>
+          <span>Digital products</span>
+          <span>AI & computer vision</span>
         </div>
-        <div class="art-sticker sticker-bottom">BUILT WITH<br>INTENTION <span>♥</span></div>
-        <span class="floating-star star-one">✳</span><span class="floating-star star-two">✦</span>
-      </div>
-      <div class="hero-foot"><span>SCROLL A LITTLE</span><span>01 — A LITTLE ABOUT ME ↓</span></div>
-    </section>
+      </section>
 
-    <section id="about" class="reveal">
-      <div class="section-heading"><p class="section-tag">01 / The person behind the pixels</p><span class="heading-doodle">✳</span></div>
-      <div class="about-grid">
-        <div class="about-copy">
-          <h2>Curious by nature.<br><span class="text-accent">Practical by design.</span></h2>
-          <p>My work brings together <strong>design-aware web development, product thinking, and practical engineering.</strong> I build websites and digital experiences for different use cases, alongside software projects that explore automation, computer vision, and intelligent systems.</p>
-          <p>Across my projects, I focus on making the idea clear, the experience usable, and the implementation honest about what is live, experimental, or still in progress.</p>
-          <p>Want a focused look at my website work? Visit my <a href="https://oluwafemi-murex.vercel.app/" target="_blank" rel="noreferrer"><strong>specialist web portfolio ↗</strong></a>.</p>
-        </div>
-        <div class="stack-card">
-          <div class="stack-label">MY TOOLBOX <span>WHAT I BUILD WITH</span></div>
-          <div><h3>Software / AI</h3><ul><li>Python</li><li>OpenCV</li><li>YOLO / ByteTrack</li><li>Flask / FastAPI</li></ul></div>
-          <div><h3>Web / Product</h3><ul><li>HTML / CSS / JavaScript</li><li>React / TypeScript</li><li>Astro / Tailwind CSS</li><li>Supabase / APIs</li></ul></div>
-          <div class="stack-note">ALWAYS LEARNING <span>↗</span></div>
-        </div>
-      </div>
-    </section>
+      <section id="about" class="reveal">
+        <p class="section-tag">01 / About</p>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>My work brings together <strong>design-aware web development, product thinking, and practical engineering.</strong> I build websites and digital experiences for different use cases, alongside software projects that explore automation, computer vision, and intelligent systems.</p>
+            <p>Across my projects, I focus on making the underlying idea clear, the experience usable, and the implementation honest about what is live, experimental, or still in progress.</p>
+            <p>For a more focused selection of my website work, visit my <a href="https://oluwafemi-murex.vercel.app/" target="_blank" rel="noreferrer"><strong>specialist web portfolio</strong></a>.</p>
+          </div>
 
-    <section id="work" class="reveal">
-      <div class="work-heading">
-        <div><p class="section-tag">02 / Things I've made</p><h2>A little bit of<br><span class="text-accent">this & that.</span></h2></div>
-        <p class="work-intro">Different problems, different tools. Here’s a selection of software, AI experiments, and digital experiences I've worked on.</p>
-      </div>
-      <div class="project-group-label"><span>01</span> SOFTWARE, AI & WEB EXPERIENCES <i></i></div>
-      <div class="work-list work-list-featured">
-        <article class="work-card">
+          <div class="stack-card">
+            <div>
+              <h3>Software / AI</h3>
+              <ul>
+                <li>Python</li>
+                <li>OpenCV</li>
+                <li>YOLO / ByteTrack</li>
+                <li>Flask / FastAPI</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Web / Product</h3>
+              <ul>
+                <li>HTML / CSS / JavaScript</li>
+                <li>React / TypeScript</li>
+                <li>Astro / Tailwind CSS</li>
+                <li>Supabase / APIs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="reveal">
+        <p class="section-tag">02 / Selected work</p>
+        <div class="work-list">
+          <article class="work-card">
             <div class="work-topline">
               <h3>VisionSense-AI</h3>
               <span>Deployed AI project</span>
@@ -216,56 +245,71 @@
               <a href="https://braintrack-architect-showcase.lovable.app/" target="_blank" rel="noreferrer">Live concept</a>
             </div>
           </article>
-        
-      </div>
-      <p class="portfolio-note">Explore more website work in the <a href="https://oluwafemi-murex.vercel.app/" target="_blank" rel="noreferrer"><strong>specialist web portfolio ↗</strong></a>, or browse the code behind my projects on <a href="https://github.com/Bloody-noodles" target="_blank" rel="noreferrer"><strong>GitHub ↗</strong></a>.</p>
-    </section>
+        </div>
+        <p class="about-copy" style="margin-top: 1.5rem;">Explore more website work in the <a href="https://oluwafemi-murex.vercel.app/" target="_blank" rel="noreferrer"><strong>specialist web portfolio</strong></a>, or browse the code behind my projects on <a href="https://github.com/Bloody-noodles" target="_blank" rel="noreferrer"><strong>GitHub</strong></a>.</p>
+      </section>
 
-    <section id="contact" class="reveal">
-      <div class="contact-box">
-        <div><p class="section-tag">03 / Your turn</p><p class="contact-head">Got a good idea?<br><span>Let's make it real.</span></p><p class="contact-sub">Have a project, an opportunity, or just want to talk about building things? My inbox is open.</p></div>
-        <div class="contact-links"><a class="contact-email" href="mailto:femiwaya183@gmail.com">femiwaya183@gmail.com ↗</a><a href="https://github.com/Bloody-noodles" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/oluwafemi-waya-1219a13a2" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
-        <span class="contact-spark" aria-hidden="true">✳</span>
-      </div>
-    </section>
-    <footer class="site-footer"><a class="wordmark" href="#top">femi<span>✳</span></a><span>Made with curiosity in Nigeria.</span><a href="#top">Back to top ↑</a></footer>
-  </main>
+      <section id="contact" class="reveal">
+        <p class="section-tag">03 / Contact</p>
+        <div class="contact-box">
+          <div>
+            <p class="contact-head">Let’s build something real.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:femiwaya183@gmail.com">femiwaya183@gmail.com</a>
+            <a href="https://github.com/Bloody-noodles" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/oluwafemi-waya-1219a13a2" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
   <script>
     const revealItems = document.querySelectorAll('.reveal');
-    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    if ('IntersectionObserver' in window && !reduceMotion) {
-      const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-
-      revealItems.forEach((item, index) => {
-        item.style.setProperty('--reveal-delay', Math.min(index * 90, 270) + 'ms');
-        revealObserver.observe(item);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
       });
-    } else {
-      revealItems.forEach((item) => item.classList.add('visible'));
-    }
+    }, { threshold: 0.15 });
 
-    const navLinks = document.querySelectorAll('.top-nav a[href^="#"]');
+    revealItems.forEach((item) => observer.observe(item));
+
+    const navLinks = document.querySelectorAll('.side-nav a');
     const sections = document.querySelectorAll('main section[id]');
-    if ('IntersectionObserver' in window) {
-      const navObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          navLinks.forEach((link) => {
-            const active = link.getAttribute('href') === '#' + entry.target.id;
-            link.classList.toggle('active', active);
-          });
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => {
+          const active = link.getAttribute('href') === '#' + entry.target.id;
+          link.classList.toggle('active', active);
         });
-      }, { threshold: 0.25, rootMargin: '-12% 0px -45% 0px' });
-      sections.forEach((section) => navObserver.observe(section));
-    }
+      });
+    }, { threshold: 0.45, rootMargin: '-15% 0px -35% 0px' });
+
+    sections.forEach((section) => navObserver.observe(section));
+
+    const themeToggle = document.querySelector('.theme-toggle');
+    const toggleLabel = document.querySelector('.toggle-label');
+
+    const applyTheme = (theme) => {
+      const isLight = theme === 'light';
+      document.body.dataset.theme = theme;
+      themeToggle.setAttribute('aria-pressed', String(isLight));
+      toggleLabel.textContent = isLight ? 'Light mode' : 'Dark mode';
+      localStorage.setItem('portfolio-theme', theme);
+    };
+
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    applyTheme(savedTheme || 'dark');
+
+    themeToggle.addEventListener('click', () => {
+      const nextTheme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
+      applyTheme(nextTheme);
+    });
   </script>
 </body>
 </html>
