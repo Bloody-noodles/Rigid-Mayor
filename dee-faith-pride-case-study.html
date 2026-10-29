@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dee-Faith Pride — Case Study | Rigid Mayor</title>
+<meta name="description" content="A case study of a deployed digital-services website built around service discovery, WhatsApp enquiries, and booking-related pages.">
+<meta name="theme-color" content="#101113">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.case-shell{width:min(980px,calc(100% - 36px));margin:36px auto 72px}
+.case-nav{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:54px;font:12px var(--mono);color:var(--accent-strong)}
+.case-hero{padding:clamp(24px,5vw,54px);border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,rgba(255,138,82,.09),rgba(255,255,255,.015))}
+.case-kicker,.case-label{font:11px var(--mono);letter-spacing:.15em;text-transform:uppercase;color:var(--accent-strong)}
+.case-hero h1{font:600 clamp(2.5rem,7vw,5rem)/.98 var(--display);letter-spacing:-.06em;margin:18px 0}
+.case-hero .case-lead{max-width:720px;font-size:1.12rem;line-height:1.8;color:var(--text-soft)}
+.case-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.case-actions a{display:inline-flex;padding:12px 17px;border:1px solid var(--line);border-radius:999px;font:12px var(--mono);color:var(--text-soft)}
+.case-actions a.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.case-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0 44px}
+.case-meta div{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.015)}
+.case-meta strong{display:block;margin-top:8px;font-size:.95rem}
+.case-section{padding:30px 0;border-bottom:1px solid var(--line)}
+.case-section h2{font:600 clamp(1.6rem,4vw,2.3rem)/1.1 var(--display);letter-spacing:-.04em;margin:10px 0 14px}
+.case-section p,.case-section li{color:var(--text-soft);line-height:1.85}
+.case-section ul{padding-left:20px}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.case-panel{padding:22px;border:1px solid var(--line);border-radius:16px}
+.case-panel h3{margin-top:0;font:600 1.1rem var(--display)}
+.case-note{font-size:.9rem;color:var(--text-faint)!important}
+.case-footer{padding-top:32px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.case-footer a{color:var(--accent-strong)}
+@media(max-width:640px){.case-shell{width:calc(100% - 22px);margin-top:18px}.case-meta,.case-grid{grid-template-columns:1fr}.case-nav{margin-bottom:28px}}
+@media(prefers-reduced-motion:reduce){.case-shell{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main class="case-shell">
+  <nav class="case-nav" aria-label="Case study navigation">
+    <a href="index.html">← Rigid Mayor</a>
+    <span>Selected case study / 01</span>
+  </nav>
+
+  <header class="case-hero">
+    <p class="case-kicker">Real-business website · Publicly deployed</p>
+    <h1>Dee-Faith Pride<br><span style="color:var(--accent)">Multi-Biz</span></h1>
+    <p class="case-lead">A digital-services website designed to help visitors explore available services and take a clear next step through direct enquiries and booking-related pages.</p>
+    <div class="case-actions">
+      <a class="primary" href="https://dee-faith-pride.vercel.app/" target="_blank" rel="noreferrer">Visit live website ↗</a>
+      <a href="https://github.com/Bloody-noodles/Digital-Service-Commercial-Website" target="_blank" rel="noreferrer">View source code ↗</a>
+    </div>
+  </header>
+
+  <div class="case-meta" aria-label="Project details">
+    <div><span class="case-label">Project type</span><strong>Business website</strong></div>
+    <div><span class="case-label">My contribution</span><strong>AI-assisted development and implementation</strong></div>
+    <div><span class="case-label">Status</span><strong>Deployed; key customer-facing features tested</strong></div>
+  </div>
+
+  <section class="case-section">
+    <p class="case-label">01 / The challenge</p>
+    <h2>Make the service offer easier to understand.</h2>
+    <p>The business needed an online destination where visitors could browse its digital services, understand what was available, and contact the business without having to work out the next step themselves.</p>
+  </section>
+
+  <section class="case-section">
+    <p class="case-label">02 / The approach</p>
+    <h2>Build around discovery and enquiry.</h2>
+    <div class="case-grid">
+      <article class="case-panel">
+        <h3>Service discovery</h3>
+        <p>Organised services into a browsable catalogue so visitors can explore the offer before contacting the business.</p>
+      </article>
+      <article class="case-panel">
+        <h3>Direct contact</h3>
+        <p>Added service-specific WhatsApp enquiry paths to help interested visitors start a conversation.</p>
+      </article>
+      <article class="case-panel">
+        <h3>Booking-related pages</h3>
+        <p>Included booking and appointment-related pages as part of the customer-facing experience.</p>
+      </article>
+      <article class="case-panel">
+        <h3>Responsive experience</h3>
+        <p>Checked the deployed website on mobile layouts as well as the main customer-facing flows.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <p class="case-label">03 / Implementation</p>
+    <h2>Tools and working method</h2>
+    <p>The site was built with an AI-assisted workflow, with implementation work reviewed and key customer-facing features tested rather than assuming generated code was correct.</p>
+    <ul>
+      <li><strong>Astro</strong> for the website framework</li>
+      <li><strong>TypeScript</strong> for typed application code</li>
+      <li><strong>Tailwind CSS</strong> for styling</li>
+      <li><strong>Vercel</strong> for public deployment</li>
+    </ul>
+  </section>
+
+  <section class="case-section">
+    <p class="case-label">04 / Outcome and scope</p>
+    <h2>A live website with a clearer route to contact.</h2>
+    <p>The project is publicly deployed, with the service catalogue, WhatsApp enquiry paths, booking-related pages, and mobile experience checked.</p>
+    <p class="case-note"><strong>Scope note:</strong> Database-backed administration and order workflows require further configuration. They are not represented here as verified production features. No measured change in sales, enquiries, or revenue is being claimed.</p>
+  </section>
+
+  <section class="case-section">
+    <p class="case-label">05 / What this demonstrates</p>
+    <h2>Practical delivery, with honest boundaries.</h2>
+    <p>This project demonstrates the ability to shape a real business need into a deployed web experience, prioritise customer-facing actions, use AI tools as part of development, and distinguish tested functionality from work that still needs configuration.</p>
+  </section>
+
+  <footer class="case-footer">
+    <a href="index.html">← Back to Rigid Mayor portfolio</a>
+    <a href="mailto:femiwaya183@gmail.com">Discuss a project →</a>
+  </footer>
+</main>
+</body>
+</html>
