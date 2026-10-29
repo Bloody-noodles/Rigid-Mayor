@@ -607,3 +607,9 @@ button:focus-visible {
   }
 }
 
+
+/* Keep the long Selected Work section visible even if its reveal observer never fires. */
+#work.reveal {
+  opacity: 1;
+  transform: none;
+}
