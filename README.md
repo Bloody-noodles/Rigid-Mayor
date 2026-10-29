@@ -1,6 +1,6 @@
-# VICE MAYOR — Oluwafemi Waya
+# Rigid Mayor — Oluwafemi Waya
 
-> **Web experiences, digital products, software engineering, and practical AI systems.**
+> **Ideas into working technology.** Web experiences, digital products, software engineering, and practical AI systems.
 
 This repository contains the source for my overall portfolio. It brings together selected website builds, digital products, and software projects, while my [specialist web portfolio](https://oluwafemi-murex.vercel.app/) provides a more focused presentation of website work.
 
@@ -17,7 +17,7 @@ Real-time human detection and multi-object tracking built with **YOLO11n** and *
 
 ### Digital-Service Platform
 
-A service-discovery and commerce website with category browsing, service-specific WhatsApp enquiries, appointment booking, promotions, and a staff-managed order workflow. Payment reports are submitted for manual review; payment processing and fulfilment should not be described as fully automated.
+A service-discovery and commerce website with category browsing, service-specific WhatsApp enquiries, appointment booking, and promotions. Database-backed administration and order workflows require configuration and are not presented here as verified production features.
 
 - **Live site:** https://dee-faith-pride.vercel.app/
 - **Source:** https://github.com/Bloody-noodles/Digital-Service-Commercial-Website
