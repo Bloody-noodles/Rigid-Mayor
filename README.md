@@ -22,6 +22,13 @@ A service-discovery and commerce website with category browsing, service-specifi
 - **Live site:** https://dee-faith-pride.vercel.app/
 - **Source:** https://github.com/Bloody-noodles/Digital-Service-Commercial-Website
 
+### Amala Spot
+
+Full-stack Nigerian restaurant ordering platform built with **Next.js App Router, TypeScript, Supabase PostgreSQL, and Google Gemini**. Includes a database-driven food and drinks catalogue, configurable menu options, cart operations, server-side price validation, demonstration order creation, private-key order tracking, an admin interface, and an AI assistant for menu discovery and basket interactions. The project is a portfolio/demo environment; it does not process real payments or represent a live restaurant fulfilment service.
+
+- **Live demo:** https://amala-spot-site.vercel.app/
+- **Source:** https://github.com/Bloody-noodles/amala-spot
+
 ### Campus Security System
 
 Final-year computer-vision project combining object detection and tracking for surveillance, threat alerts, screenshot capture, event logging, and an analytics dashboard.
